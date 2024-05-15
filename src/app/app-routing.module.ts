@@ -15,6 +15,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'post',
+    loadChildren: () =>
+      import('./modules/posts/posts.module').then((m) => m.PostsModule),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',
