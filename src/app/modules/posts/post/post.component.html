@@ -1,3 +1,5 @@
-<div class="parent" *ngFor="let i of postes">
-  <app-post-card id="child" class="child" [post]="i"></app-post-card>
+<div class="parent">
+  <div class="child" *ngFor="let i of postes">
+    <app-post-card id="child" [post]="i"></app-post-card>
+  </div>
 </div>

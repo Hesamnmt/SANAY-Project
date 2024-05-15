@@ -1,9 +1,7 @@
 .parent {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
-
 .child {
   flex: 33%;
-  margin: 10px 0;
 }

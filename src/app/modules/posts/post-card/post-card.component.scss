@@ -3,5 +3,23 @@
   margin-right: 8px;
   border-radius: 16px;
   margin-top: 10px;
-  border: 1px solid gray;
+  border: 1px solid #764248ff;
+  height: 100%;
+}
+mat-card-title {
+  color: #764248ff;
+}
+.see-btn {
+  border: 1px solid #e3c5bbff;
+  background-color: #dfe2cfff;
+  color: #764248ff;
+  border-radius: 16px;
+  padding: 10px;
+  width: 100%;
+  bottom: unset;
+}
+.see-btn:hover {
+  border: 1px solid #e3c5bbff;
+  background-color: #dda3b2ff;
+  color: #764248ff;
 }

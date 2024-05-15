@@ -20,6 +20,11 @@ const routes: Routes = [
       import('./modules/posts/posts.module').then((m) => m.PostsModule),
   },
   {
+    path: 'user',
+    loadChildren: () =>
+      import('./modules/user/user.module').then((m) => m.UserModule),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',
