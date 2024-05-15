@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms'; // Import ReactiveFormsModule
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [],
@@ -27,6 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms'; // Import ReactiveFormsMod
     MatMenuModule,
     MatDividerModule,
     ReactiveFormsModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatSnackBarModule,
   ],
 })
 export class SharedModule {}

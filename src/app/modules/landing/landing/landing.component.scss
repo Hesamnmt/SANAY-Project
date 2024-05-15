@@ -1,0 +1,62 @@
+.companyName {
+  font-size: 150%;
+}
+
+div {
+  overflow: inherit;
+}
+
+a {
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+button {
+  font-size: 110%;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-sidenav-content {
+  font-size: 200%;
+  text-align: center;
+}
+.mat-drawer-container {
+  position: relative;
+  z-index: 1;
+  color: var(--mat-sidenav-content-text-color);
+  background-color: var(--mat-sidenav-content-background-color);
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}
+.mat-toolbar.mat-primary {
+  --mat-toolbar-container-background-color: #dda3b2ff;
+  --mat-toolbar-container-text-color: white;
+}
+.link-btn {
+  background-color: #ffadc6ff;
+  margin: 8px;
+  border-radius: 16px;
+}
+$tomato: #f55d3eff;
+$battleship-gray: #878e88ff;
+$jonquil: #f7cb15ff;
+$white: #ffffffff;
+$sky-blue: #76bed0ff;
+
+$cordovan: #764248ff;
+$amaranth-pink: #dda3b2ff;
+$carnation-pink: #ffadc6ff;
+$pale-dogwood: #e3c5bbff;
+$eggshell: #dfe2cfff;
