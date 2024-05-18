@@ -6,6 +6,8 @@
     <p>{{ post.body }}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button class="see-btn">see post ( {{ post.id }} )</button>
+    <button class="see-btn" (click)="seePost(post)">
+      see post ( {{ post.id }} )
+    </button>
   </mat-card-actions>
 </mat-card>
