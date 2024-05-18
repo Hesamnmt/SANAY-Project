@@ -1,0 +1,9 @@
+<div class="spinner" *ngIf="!isResponseResived">
+  <mat-spinner></mat-spinner>
+</div>
+<div class="all-container" *ngIf="isResponseResived">
+  <h1>post : {{ postItem.id }}</h1>
+  <h3>{{ postItem.title }}</h3>
+  <h5>{{ postItem.body }}</h5>
+  <button class="close-btn" (click)="onCloseButton()">close</button>
+</div>

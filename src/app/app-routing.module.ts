@@ -25,6 +25,13 @@ const routes: Routes = [
       import('./modules/user/user.module').then((m) => m.UserModule),
   },
   {
+    path: 'comments',
+    loadChildren: () =>
+      import('./modules/comments/comments.module').then(
+        (m) => m.CommentsModule
+      ),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',

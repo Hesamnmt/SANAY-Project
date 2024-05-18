@@ -1,0 +1,10 @@
+<div class="all" *ngFor="let i of comments">
+  <div class="comment">
+    <h1>{{ i.id }}</h1>
+    <p>{{ i.body }}</p>
+  </div>
+  <div class="post">
+    <p>post NO. {{ i.postId }}</p>
+    <button (click)="openPostDialog(i.postId)">see post</button>
+  </div>
+</div>

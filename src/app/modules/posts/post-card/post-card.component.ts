@@ -1,3 +1,4 @@
+import { PostsService } from './../service/posts.service';
 import { Component, Input } from '@angular/core';
 import { IPost } from 'src/app/core/models/post';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
@@ -12,7 +13,7 @@ import { DialogConfig } from '@angular/cdk/dialog';
 export class PostCardComponent {
   @Input() post!: IPost;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private postsService: PostsService) {}
 
   seePost(item: IPost) {
     const dioalgConfig = new MatDialogConfig();
