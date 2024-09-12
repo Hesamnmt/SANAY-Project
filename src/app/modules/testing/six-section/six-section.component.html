@@ -1,1 +1,11 @@
-<p>six-section works!</p>
+<form [formGroup]="myForm">
+  <mat-form-field>
+    <input matInput formControlName="input" />
+  </mat-form-field>
+  <p>================================================</p>
+  <mat-form-field style="width: 90%; margin-right: 10px">
+    <mat-label>جستوجو</mat-label>
+    <input matInput #searchInput />
+    <mat-icon matSuffix aria-disabled="true">&nbsp;search</mat-icon>
+  </mat-form-field>
+</form>
