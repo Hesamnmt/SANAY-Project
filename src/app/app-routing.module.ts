@@ -32,6 +32,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'test',
+    loadChildren: () =>
+      import('./modules/testing/testing.module').then((m) => m.TestingModule),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',
