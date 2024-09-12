@@ -39,7 +39,7 @@ export class SixSectionComponent {
       });
   }
 
-  //----------- moadian find previenc and city ----------
+  //----------- find previenc and city ----------
   ngAfterViewInit() {
     fromEvent(this.searchInput.nativeElement, 'input')
       .pipe(
