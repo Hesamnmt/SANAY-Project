@@ -1,4 +1,4 @@
-<form [formGroup]="myForm">
+<!-- <form [formGroup]="myForm">
   <mat-form-field>
     <input matInput formControlName="input" />
   </mat-form-field>
@@ -8,4 +8,26 @@
     <input matInput #searchInput />
     <mat-icon matSuffix aria-disabled="true">&nbsp;search</mat-icon>
   </mat-form-field>
-</form>
+</form> -->
+
+<header class="header">
+  <div class="logo">
+    <div class="logo-ultimate"></div>
+    <p class="logo-name">Daneshjooyar Courses<span>&trade;</span></p>
+  </div>
+</header>
+<div id="app">
+  <h1>RxJS Basics in Angular</h1>
+  <p>Start fetching random images</p>
+  <p>
+    Status: <span id="status">{{ status }}</span>
+  </p>
+  <button style="background: green" (click)="onStart()">Start</button>
+  <button style="background: red" (click)="onStop()">Stop</button>
+  <img
+    *ngIf="imageUrl"
+    [src]="imageUrl"
+    alt="Random Image"
+    style="max-width: 200px; max-height: 200px; margin-top: 20px"
+  />
+</div>
