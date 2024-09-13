@@ -34,30 +34,30 @@ export class SixSectionComponent {
   @ViewChild('searchInput', { static: true }) searchInput!: ElementRef;
 
   constructor(private apiService: ApiService, private fb: FormBuilder) {
-    // this.myForm = fb.group({
-    //   input: [''],
-    // });
+    this.myForm = fb.group({
+      input: [''],
+    });
   }
 
   //----------- find previenc and city ----------
 
   ngAfterViewInit() {
-    // this.myForm
-    //   .get('input')
-    //   ?.valueChanges.pipe(
-    //     debounceTime(500),
-    //     tap((val) => console.log(val)),
-    //     switchMap((val) => this.apiService.getGithubUser(val)),
-    //     catchError((err, caugth) => {
-    //       console.error({
-    //         error: err.message,
-    //       });
-    //       // return empty();
-    //       return caugth;
-    //     })
-    //   )
-    //   .subscribe();
-    //----------- find previenc and city with switchMap ----------
+    this.myForm
+      .get('input')
+      ?.valueChanges.pipe(
+        debounceTime(500),
+        tap((val) => console.log(val)),
+        switchMap((val) => this.apiService.getGithubUser(val)),
+        catchError((err, caugth) => {
+          console.error({
+            error: err.message,
+          });
+          // return empty();
+          return caugth;
+        })
+      )
+      .subscribe();
+    // ----------- find previenc and city with switchMap ----------
     // fromEvent(this.searchInput.nativeElement, 'input')
     //   .pipe(
     //     debounceTime(500),
@@ -102,7 +102,7 @@ export class SixSectionComponent {
   private interval$ = new Subscription();
 
   onStart(): void {
-    const randomImageFetcher$ = interval(1000).pipe(
+    const randomImageFetcher$ = interval(4000).pipe(
       tap(() => {
         this.status = 'active';
         this.fetchRandomImage();
